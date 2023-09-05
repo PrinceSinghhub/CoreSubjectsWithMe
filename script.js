@@ -30,5 +30,4 @@ if(progressStartValue == progressEndValue){
     clearInterval(progress);
 }    
 }, speed);
-
 // -------------------------------------------------------------------
