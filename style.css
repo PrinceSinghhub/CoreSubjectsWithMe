@@ -31,6 +31,7 @@
   gap: 5px;
 }
 
+
 .container:hover{
   cursor: pointer;
 }
@@ -69,6 +70,21 @@
   gap: 10px;
 }
 
+
+.mainBar{
+  position: relative;
+  top: 10px;
+  min-height: 20px;
+  max-height: 50px;
+  min-width: 150px;
+  max-width: 150px;
+  /* background: #000; */
+}
+
+.nameTag{
+  position: relative;
+  top: 8px;
+}
 /* ----------------------------------------status bar css  ----------------------------------*/
 @keyframes progress {
   0% { --percentage: 0; }
