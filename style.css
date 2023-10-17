@@ -5,11 +5,11 @@
   box-sizing: border-box;
 }
 
-
 @media (max-width:400px){
   .aboutMe{
     flex-direction: column;
   }
+  
 }
 
 .dsa{
@@ -31,7 +31,6 @@
   gap: 5px;
 }
 
-
 .container:hover{
   cursor: pointer;
 }
@@ -45,14 +44,18 @@
   color:black;
   border:1px solid rgb(122, 116, 116);
   border-radius: 20px;
-
 }
 
 .myImg{
   border-radius: 10%;
   width: 100rem;
-
 }
+
+.lastmyImg{
+  border-radius: 10%;
+  width: 15em;
+}
+
 .content
 {
   padding:10px;
@@ -64,27 +67,48 @@
   
 }
 
-
 .aboutMe{
   display:flex;
   gap: 10px;
 }
 
-
-.mainBar{
-  position: relative;
-  top: 10px;
-  min-height: 20px;
-  max-height: 50px;
-  min-width: 150px;
-  max-width: 150px;
-  /* background: #000; */
+.titleHead{
+  font-weight:bold;
 }
 
-.nameTag{
-  position: relative;
-  top: 8px;
+
+.problemList {
+	padding: 0;
+	margin: 0;
+	max-width: 700px;
+	position: relative;
 }
+.problemList::before {
+	content: '';
+	width: 0.5rem;
+	position: absolute;
+	top: 0;
+	left: 8%;
+	background: peachpuff;
+	z-index: -1;
+}
+
+.prbmName {
+	padding: 0.5rem 1.5rem 1rem;
+	border-radius: 1rem;
+	background: peachpuff;
+}
+
+.problemList{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.prbmName a{
+  color: black;
+}
+
 /* ----------------------------------------status bar css  ----------------------------------*/
 @keyframes progress {
   0% { --percentage: 0; }
@@ -231,7 +255,6 @@
   justify-content: center;
 
   
- 
 }
 .circular-progress::before{
   content: "";
@@ -249,16 +272,168 @@
 
 }
 
+.RecursionMainDiv{
+  margin-top: -30px;
+}
+
+.DPmainDiv{
+  margin-top: -30px;
+}
+.btandbstMainDiv{
+  margin-top: -30px;
+}
+
+.stackQueuueMainDiv{
+  margin-top: -30px;
+}
+
+.binarySearchMainDiv{
+  margin-top: -30px;
+}
+.graphMainDiv{
+  margin-top: -30px;
+}
+
+.linkedlistMainDiv{
+  margin-top: -30px;
+}
+
+.greadyMainDiv{
+  margin-top: -30px;
+}
+
+.triesMainDiv{
+  margin-top: -30px;
+}
+
+.swMai{
+  margin-top: -30px;
+}
+
+.bitManuMainDiv{
+  margin-top: -30px;
+}
+
+.heapsMainDiv{
+  margin-top: -30px;
+}
 
 /* -------------------------------------------------------------------------------- */
 
-center {
-
-  font-size: 15px;
+center{
+  font-size: 18px;
   font-weight: 1000;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+.mainBar{
+  position: relative;
+  top: 10px;
+  min-height: 20px;
+  max-height: 50px;
+  min-width: 150px;
+  max-width: 150px;
+  /* background: #000; */
+}
+
+.nameTag{
+  position: relative;
+  top: 8px;
+}
+
+/* ------------------------------------------------------------------- */
+
+.bannerVideo{
+  display:flex;
+  gap: 10px;
+}
+
+#myVideo{
+  border-radius: 2%;
+  width: 500rem;
+}
+
+/* ----------------------------------------------------------- */
+
+.secHeader1{
+  background: rgb(238,174,202);
+  background: linear-gradient(90deg, rgba(238,174,202,1) 7%, rgba(220,177,208,1) 48%, rgba(148,187,233,1) 100%);
+  height: 50px;
+  border-radius: 100px;
+}
+
+.secHeader2{
+  background: rgb(238,174,202);
+  background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  height: 50px;
+  border-radius: 100px;
+}
+
+.secHeader3{
+  background: rgb(238,174,202);
+  background: linear-gradient(90deg, rgba(230,159,66,1) 0%, rgba(114,171,237,1) 100%);
+  height: 50px;
+  border-radius: 100px;
+}
+
+.secHeader4{
+  background: rgb(232,233,230);
+  background: linear-gradient(90deg, rgba(232,233,230,1) 51%, rgba(175,83,41,0.6054621677772671) 95%); 
+  height: 50px;
+  border-radius: 100px;
+}
+
+
+
+
+.tagSec{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 11px;
+}
+
+.tagSec p{
+  font-size: large;
+  font-weight: bold;
+  color: rgba(51, 48, 48, 0.692);
+
+}
+
+/* --------------------------------------------------------------------------------------------- */
+#AdvancedTitle{
+  background: linear-gradient(100deg, rgba(25,241,104,0.4) 0%, rgba(191,142,115,0.4) 79%);
+  border: none;
+}
+
+#SecondAdvancedTitle{
+  border: none;
+  background: linear-gradient(90deg, rgba(0,212,255,0.4514005431274072) 0%, rgba(115,115,191,0.4654061453683036) 56%);
+}
+
+#ThirdAdvancedTitle{
+  border: none;
+  background: linear-gradient(90deg, rgba(223,238,255,1) 0%, rgba(216,233,253,1) 10%, rgba(148,186,231,1) 61%);
   
 }
-    
+
+#fourthAdvancedTitle{
+border: none;
+background: linear-gradient(90deg, rgba(155,201,253,1) 0%, rgba(239,240,37,0.6054621677772671) 100%); 
+}
+
+.bannerImg{
+  margin-bottom: 20px;
+}
+.bannerImg img{
+  border-radius: 10px;
+}
+
+.headTag{
+  font-size: 20px;
+}
+
 body {
     --wp--preset--color--black: #001d30;
     --wp--preset--color--cyan-bluish-gray: #abb8c3;
